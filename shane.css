@@ -41,6 +41,7 @@ footer{
 }
 .heads{
     animation-name:animation1;
+    opacity:0;
     animation-duration:2s;
     animation-delay:0.2s;
     animation-timing-function: ease-in;
@@ -51,6 +52,7 @@ footer{
         transform: translateY(100%);
     }
     100%{
+        opacity:1;
         transform: translateY(0%);
     }
 }
