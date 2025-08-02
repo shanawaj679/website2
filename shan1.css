@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin:0;
+}
+header{
+    height:4vh;
+    width:100%;
+    background-color:rgb(186, 136, 255);
+    border:1px solid transparent;
+    display:flex;
+    justify-content:center;
+    font-size:large;
+    color: white;
+}
+
+.hi{
+     animation-name:animate;
+     animation-delay:0s;
+     animation-duration:5s;
+     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     animation-fill-mode: forwards;
+}
+@keyframes animate{
+    0%{
+       transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.mid{
+    display:flex;
+    justify-content:center;
+    font-size:x-large;
+}
+main{
+    height:100vh;
+    width:100%;
+    border:1px solid transparent;
+background: linear-gradient(to top, rgb(186, 136, 255), #5284f7);
+color:white;
+}
+.hi1{
+    animation-name:animate1;
+    opacity: 0;
+    animation-delay:2s;
+    animation-timing-function:ease-in-out;
+    animation-duration:6s;
+    animation-fill-mode: forwards;
+}
+@keyframes animate1{
+    0%{
+       transform: translateY(100%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0%);
+    }
+}
+.about{
+    height:60vh;
+    width:100%;
+    border:2px solid transparent;
+}
+main section div h2{
+    margin:1em;
+}
+main section div p{
+    margin:1.5em;
+}
+.about:hover{
+    box-shadow:5px 10px 50px blue;
+}
+.a1{
+    opacity:0;
+    transform:translateY(30);
+animation-name:animat;
+animation-duration:12s;
+animation-timing-function:ease-in-out;
+animation-fill-mode: forwards;
+}
+@keyframes animat{
+   to{
+transform: translateY(0);
+opacity:1;
+   }
+}
+button{
+    background-color:transparent;
+    border:2px solid transparent;
+    border-radius:1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: rgb(23, 23, 23);
+}
+.butt{
+    height:8vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:5em;
+}
+button:hover{
+    text-decoration: underline;
+    box-shadow:2px 5px 10px rgb(237, 222, 251);
+}

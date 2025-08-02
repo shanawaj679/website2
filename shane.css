@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+ height:10vh;
+ width:100%;
+ border:2px solid transparent;
+ background-color: rgb(160, 50, 230); 
+ color: #f8eefe;
+}
+main{
+    height:54vh;
+    width: 100%;
+     border:2px solid transparent;
+    background: linear-gradient(to left,rgb(146, 21, 230),rgb(226, 129, 255));
+    color: #f8eefe;
+}
+.mid{
+    display:flex;
+    justify-content: center;
+}
+.skills{
+    height:25vh;
+    width:100%;
+}
+.projects{
+    height:25vh;
+    width:100%;
+}
+.skill_cont{
+    margin:1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+footer{
+    height:35vh;
+    width:100%;
+    border:2px solid transparent;
+    background-color: rgb(210, 100, 255);
+}
+.heads{
+    animation-name:animation1;
+    animation-duration:2s;
+    animation-delay:0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes animation1{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.mains{
+    opacity:0;
+    animation-name:animation2;
+    animation-delay:1.5s;
+    animation-timing-function: ease-in-out;
+    animation-duration:6s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation2{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        opacity:1;
+    transform: translateX(0%);
+    }
+}
+.foot{
+    animation-name:animation3;
+    animation-timing-function:ease-out;
+    animation-delay:5.5s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    animation-duration:6s;
+}
+@keyframes animation3{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0%);
+    }
+}
